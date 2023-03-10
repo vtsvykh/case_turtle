@@ -25,17 +25,31 @@ def triangle(x, y, a, b, angle, color, fill):
 def ellipse(x, y, a, b, color, fill, pensize):
     '''
     Function for draw ellipse.
-    :param x:
-    :param y:
-    :param a:
-    :param b:
-    :param color:
-    :param fill:
-    :param pensize:
+    :param x: x start coordinate
+    :param y: y start coordinate
+    :param a: axis length on x-axis
+    :param b: axis length on y-axis
+    :param color: stroke color
+    :param fill: fill color
+    :param pensize: pensize
     :return:
     '''
 
-    pass
+    turtle.color(color, fill)
+    turtle.begin_fill()
+    turtle.pensize()
+    turtle.pu()
+    turtle.goto(x, y)
+    turtle.rt(45)
+    turtle.pd()
+
+    for i in range(2):
+        turtle.circle(a, 90)
+        turtle.circle(b, 90)
+
+    turtle.end_fill()
+
+
 
 def parallelogram(x, y, a, b, angle_1, angle_2, color, fill):
     '''
@@ -56,7 +70,8 @@ def parallelogram(x, y, a, b, angle_1, angle_2, color, fill):
 def draw_fox():
     '''Drawing fox on big ball.'''
 
-    pass
+
+
 
 def draw_clown():
     '''Drawing clown with balls.'''
