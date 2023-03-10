@@ -7,20 +7,31 @@ Tsvykh Viktoria
 
 import turtle
 
+
 def triangle(x, y, a, b, angle, color, fill):
     '''
     Function for draw triangle.
-    :param x:
-    :param y:
-    :param a:
-    :param b:
-    :param angle:
-    :param color:
-    :param fill:
+    :param x: x start coordinate
+    :param y: y start coordinate
+    :param a: lengths of equal sides
+    :param b: length of side
+    :param angle: angle between equal sides
+    :param color: stroke color
+    :param fill: fill color
     :return:
     '''
 
-    pass
+    turtle.color(color, fill)
+    turtle.begin_fill()
+    turtle.pu()
+    turtle.goto(x, y)
+    turtle.pd()
+    turtle.forward(a)
+    turtle.left(angle)
+    turtle.forward(b)
+    turtle.goto(x, y)
+    turtle.end_fill()
+
 
 def ellipse(x, y, a, b, color, fill, pensize):
     '''
