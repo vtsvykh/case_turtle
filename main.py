@@ -54,18 +54,30 @@ def ellipse(x, y, a, b, color, fill, pensize):
 def parallelogram(x, y, a, b, angle_1, angle_2, color, fill):
     '''
     Function for draw parallelogram.
-    :param x:
-    :param y:
-    :param a:
-    :param b:
-    :param angle_1:
-    :param angle_2:
-    :param color:
-    :param fill:
+    :param x: x start coordinate
+    :param y: y start coordinate
+    :param a: length of side parallel to x-axis
+    :param b: length of side parallel to y-axis
+    :param angle_1: bottom right and top left angles
+    :param angle_2: top right and bottom left angles
+    :param color: stroke color
+    :param fill: fill color
     :return:
     '''
 
-    pass
+    turtle.color(color, fill)
+    turtle.begin_fill()
+    turtle.pu()
+    turtle.goto(x, y)
+    turtle.pd()
+
+    for i in range(2):
+        turtle.fd(a)
+        turtle.lt(angle_1)
+        turtle.fd(b)
+        turtle.lt(angle_2)
+
+    turtle.end_fill()
 
 def draw_fox():
     '''Drawing fox on big ball.'''
