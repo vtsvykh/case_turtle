@@ -57,7 +57,7 @@ def ellipse(x, y, a, b, color, fill, pensize):
     for i in range(2):
         turtle.circle(a, 90)
         turtle.circle(b, 90)
-
+    turtle.lt(45)
     turtle.end_fill()
 
 
@@ -92,8 +92,6 @@ def parallelogram(x, y, a, b, angle_1, angle_2, color, fill):
 
 def draw_fox():
     '''Drawing fox on big ball.'''
-
-
 
 
 def draw_clown():
