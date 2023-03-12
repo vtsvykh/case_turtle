@@ -94,7 +94,6 @@ def parallelogram(x, y, a, b, angle_1, angle_2, color, fill):
 
 def draw_fox():
     '''Drawing fox on big ball.'''
-    turtle.speed(15)
     ellipse(150, -300, 110, 110, 'black', 'green', 2)
     ellipse(170, -280, 20, 20, 'black', 'red', 1)
     parallelogram(260, -260, 40, 40, 90, 90, 'black', 'yellow')
@@ -105,7 +104,6 @@ def draw_fox():
     ellipse(170, -180, 30, 25, 'black', 'yellow', 1)
     triangle(150, -230, 40, 40, 120, 0, 'black', 'blue')
     turtle.rt(45)
-    turtle.speed(15)
     ellipse(60, -120, 5, 50, 'orange', 'brown', 3)
     ellipse(290, -70, 50, 5, 'orange', 'brown', 3)
     ellipse(70, -120, 5, 50, 'brown', 'orange', 3)
@@ -124,18 +122,14 @@ def draw_fox():
     ellipse(125, 5, 3, 3, 'black', 'black', 1)
     ellipse(58, -70, 8, 8, 'black', 'black', 1)
     parallelogram(285, -35, 70, 30, 60, 120, 'brown', 'orange')
-
     ellipse(150, 300, 40, 40, 'pink', '', 15)
     ellipse(50, 250, 40, 40, 'purple', '', 15)
     ellipse(200, 200, 40, 40, 'yellow', '', 15)
-    ellipse(100, 150, 40, 40 ,'green', '', 15)
-
-    turtle.done()
+    ellipse(100, 150, 40, 40, 'green', '', 15)
 
 
 def draw_clown():
     '''Drawing clown with balls.'''
-
 
     ellipse(-200, -110, 25, 60, 'maroon', 'maroon4', 5)
     turtle.seth(0)
@@ -174,9 +168,8 @@ def draw_clown():
 
 def main():
     '''Main function.'''
-
-    draw_fox()
     draw_clown()
+    draw_fox()
 
 
 if __name__ == '__main__':
