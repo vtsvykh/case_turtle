@@ -145,7 +145,9 @@ def draw_clown():
 
 def draw_fox():
     '''Drawing fox on big ball.'''
+
     turtle.speed(10)
+
     # Drawing ball.
     ellipse(150, -300, 110, 110, 'black', 'green', 2)
     ellipse(170, -280, 20, 20, 'black', 'red', 1)
@@ -157,6 +159,7 @@ def draw_fox():
     ellipse(170, -180, 30, 25, 'black', 'yellow', 1)
     triangle(150, -230, 40, 40, 120, 0, 'black', 'blue')
     turtle.rt(45)
+
     # Drawing fox.
     ellipse(60, -120, 5, 50, 'orange', 'brown', 3)
     ellipse(290, -70, 50, 5, 'orange', 'brown', 3)
@@ -176,6 +179,7 @@ def draw_fox():
     ellipse(125, 5, 3, 3, 'black', 'black', 1)
     ellipse(58, -70, 8, 8, 'black', 'black', 1)
     parallelogram(285, -35, 70, 30, 60, 120, 'brown', 'orange')
+
     # Drawing balls.
     ellipse(150, 300, 40, 40, 'pink', '', 15)
     ellipse(50, 250, 40, 40, 'purple', '', 15)
