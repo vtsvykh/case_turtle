@@ -91,21 +91,25 @@ def parallelogram(x, y, a, b, angle_1, angle_2, color, fill):
 
     turtle.end_fill()
 
+
 def back_groung():
     turtle.speed(10)
     turtle.bgcolor('navajowhite2')
-    ellipse(-570,-400,800,100,'chocolate4','orangered3',70)
+    ellipse(-570, -400, 800, 100, 'chocolate4', 'orangered3', 70)
 
 
 def draw_clown():
     '''Drawing clown with balls.'''
 
+    # Drawing clown.
     ellipse(-200, -110, 25, 60, 'maroon', 'maroon4', 1)
     turtle.seth(0)
+
     ellipse(-130, -50, 35, 2, 'black', 'peachpuff', 1)
     turtle.seth(0)
     ellipse(-280, -53, 35, 2, 'black', 'peachpuff', 1)
     turtle.seth(-45)
+
     triangle(-172, -20, 70, 40, 100, 197, 'cornflowerblue', 'cornflowerblue')
     triangle(-192, -20, 70, 40, 100, 0, 'cornflowerblue', 'cornflowerblue')
     turtle.seth(180)
@@ -116,23 +120,28 @@ def draw_clown():
     turtle.seth(275)
     triangle(-174, -95, 70, 40, 100, 235, 'cornflowerblue', 'cornflowerblue')
     triangle(-195, -95, 70, 40, 100, 0, 'cornflowerblue', 'cornflowerblue')
+
     ellipse(-200, -15, 28, 28, 'black', 'peachpuff', 1)
     ellipse(-184, -4, 5, 5, 'red3', 'red3', 1)
     ellipse(-170, 8, 5, 5, 'black', 'white', 1)
     ellipse(-170, 13, 2, 2, 'black', 'black', 1)
     ellipse(-196, 8, 5, 5, 'black', 'white', 1)
     ellipse(-196, 13, 2, 2, 'black', 'black', 1)
+
     turtle.seth(360)
     triangle(-210, 22, 60, 60, 120, 0, 'maroon', 'maroon4')
     ellipse(-183, 73, 5, 5, 'cornflowerblue', 'cornflowerblue', 1)
     parallelogram(-179, 50, 7, 7, 90, 90, 'black', 'yellow')
     triangle(-195, 40, 7, 8, 120, 0, 'black', 'orangered')
     parallelogram(-175, 30, 7, 7, 90, 90, 'black', 'moccasin')
+
+    # Drawing balls.
     ellipse(-90, -10, 25, 25, 'black', 'yellow', 1)
     ellipse(-130, 80, 25, 25, 'black', 'green', 1)
     ellipse(-190, 160, 25, 25, 'black', 'blue', 1)
     ellipse(-250, 100, 25, 25, 'black', 'red', 1)
     ellipse(-280, 20, 25, 25, 'black', 'orange', 1)
+
 
 def draw_fox():
     '''Drawing fox on big ball.'''
