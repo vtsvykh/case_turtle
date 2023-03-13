@@ -1,15 +1,15 @@
-'''
+"""
 "Circus"
 Group:
 Fishchukova Sofia
 Tsvykh Viktoria
-'''
+"""
 
 import turtle
 
 
 def triangle(x, y, a, b, angle1, angle2, color, fill):
-    '''
+    """
     Function for draw triangle.
     :param x: x start coordinate
     :param y: y start coordinate
@@ -20,7 +20,7 @@ def triangle(x, y, a, b, angle1, angle2, color, fill):
     :param color: stroke color
     :param fill: fill color
     :return:
-    '''
+    """
 
     turtle.color(color, fill)
     turtle.begin_fill()
@@ -36,7 +36,7 @@ def triangle(x, y, a, b, angle1, angle2, color, fill):
 
 
 def ellipse(x, y, a, b, color, fill, pensize):
-    '''
+    """"
     Function for draw ellipse.
     :param x: x start coordinate
     :param y: y start coordinate
@@ -46,7 +46,7 @@ def ellipse(x, y, a, b, color, fill, pensize):
     :param fill: fill color
     :param pensize: pensize
     :return:
-    '''
+    """
 
     turtle.color(color, fill)
     turtle.begin_fill()
@@ -64,7 +64,7 @@ def ellipse(x, y, a, b, color, fill, pensize):
 
 
 def parallelogram(x, y, a, b, angle_1, angle_2, color, fill):
-    '''
+    """
     Function for draw parallelogram.
     :param x: x start coordinate
     :param y: y start coordinate
@@ -75,7 +75,7 @@ def parallelogram(x, y, a, b, angle_1, angle_2, color, fill):
     :param color: stroke color
     :param fill: fill color
     :return:
-    '''
+    """
 
     turtle.color(color, fill)
     turtle.begin_fill()
@@ -92,14 +92,14 @@ def parallelogram(x, y, a, b, angle_1, angle_2, color, fill):
     turtle.end_fill()
 
 
-def back_groung():
+def back_ground():
     turtle.speed(10)
     turtle.bgcolor('navajowhite2')
     ellipse(-570, -400, 800, 100, 'chocolate4', 'orangered3', 70)
 
 
 def draw_clown():
-    '''Drawing clown with balls.'''
+    """Drawing clown with balls."""
 
     # Drawing clown.
     ellipse(-200, -110, 25, 60, 'maroon', 'maroon4', 1)
@@ -144,7 +144,7 @@ def draw_clown():
 
 
 def draw_fox():
-    '''Drawing fox on big ball.'''
+    """Drawing fox on big ball."""
 
     turtle.speed(10)
 
@@ -166,12 +166,14 @@ def draw_fox():
     ellipse(70, -120, 5, 50, 'brown', 'orange', 3)
     ellipse(280, -70, 50, 5, 'brown', 'orange', 3)
     turtle.lt(45)
+
     ellipse(110, -70, 120, 30, 'brown', 'orange', 3)
     turtle.lt(260)
     triangle(85, 50, 115, 115, 135, 0, 'brown', 'orange')
     turtle.rt(32)
     triangle(85, 50, 35, 35, 120, 0, 'brown', 'orange')
     turtle.rt(32)
+
     triangle(130, 20, 35, 35, 120, 0, 'brown', 'orange')
     ellipse(90, 15, 8, 8, 'brown', 'white', 2)
     ellipse(120, 0, 8, 8, 'brown', 'white', 2)
@@ -188,8 +190,8 @@ def draw_fox():
 
 
 def main():
-    '''Main function.'''
-    back_groung()
+    """Main function."""
+    back_ground()
     draw_clown()
     draw_fox()
 
