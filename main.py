@@ -92,44 +92,9 @@ def parallelogram(x, y, a, b, angle_1, angle_2, color, fill):
     turtle.end_fill()
 
 def back_groung():
+    turtle.speed(10)
     turtle.bgcolor('navajowhite2')
     ellipse(-570,-400,800,100,'chocolate4','orangered3',70)
-
-
-def draw_fox():
-    '''Drawing fox on big ball.'''
-    ellipse(150, -300, 110, 110, 'black', 'green', 2)
-    ellipse(170, -280, 20, 20, 'black', 'red', 1)
-    parallelogram(260, -260, 40, 40, 90, 90, 'black', 'yellow')
-    ellipse(269, -251, 15, 15, 'black', 'purple', 1)
-    turtle.rt(45)
-    parallelogram(220, -280, 20, 20, 90, 90, 'black', 'blue')
-    triangle(200, -200, 60, 60, 120, 0, 'black', 'pink')
-    ellipse(170, -180, 30, 25, 'black', 'yellow', 1)
-    triangle(150, -230, 40, 40, 120, 0, 'black', 'blue')
-    turtle.rt(45)
-    ellipse(60, -120, 5, 50, 'orange', 'brown', 3)
-    ellipse(290, -70, 50, 5, 'orange', 'brown', 3)
-    ellipse(70, -120, 5, 50, 'brown', 'orange', 3)
-    ellipse(280, -70, 50, 5, 'brown', 'orange', 3)
-    turtle.lt(45)
-    ellipse(110, -70, 120, 30, 'brown', 'orange', 3)
-    turtle.lt(260)
-    triangle(85, 50, 115, 115, 135, 0, 'brown', 'orange')
-    turtle.rt(32)
-    triangle(85, 50, 35, 35, 120, 0, 'brown', 'orange')
-    turtle.rt(32)
-    triangle(130, 20, 35, 35, 120, 0, 'brown', 'orange')
-    ellipse(90, 15, 8, 8, 'brown', 'white', 2)
-    ellipse(120, 0, 8, 8, 'brown', 'white', 2)
-    ellipse(95, 20, 3, 3, 'black', 'black', 1)
-    ellipse(125, 5, 3, 3, 'black', 'black', 1)
-    ellipse(58, -70, 8, 8, 'black', 'black', 1)
-    parallelogram(285, -35, 70, 30, 60, 120, 'brown', 'orange')
-    ellipse(150, 300, 40, 40, 'pink', '', 15)
-    ellipse(50, 250, 40, 40, 'purple', '', 15)
-    ellipse(200, 200, 40, 40, 'yellow', '', 15)
-    ellipse(100, 150, 40, 40, 'green', '', 15)
 
 
 def draw_clown():
@@ -168,6 +133,45 @@ def draw_clown():
     ellipse(-190, 160, 25, 25, 'black', 'blue', 1)
     ellipse(-250, 100, 25, 25, 'black', 'red', 1)
     ellipse(-280, 20, 25, 25, 'black', 'orange', 1)
+
+def draw_fox():
+    '''Drawing fox on big ball.'''
+    turtle.speed(10)
+    # Drawing ball.
+    ellipse(150, -300, 110, 110, 'black', 'green', 2)
+    ellipse(170, -280, 20, 20, 'black', 'red', 1)
+    parallelogram(260, -260, 40, 40, 90, 90, 'black', 'yellow')
+    ellipse(269, -251, 15, 15, 'black', 'purple', 1)
+    turtle.rt(45)
+    parallelogram(220, -280, 20, 20, 90, 90, 'black', 'blue')
+    triangle(200, -200, 60, 60, 120, 0, 'black', 'pink')
+    ellipse(170, -180, 30, 25, 'black', 'yellow', 1)
+    triangle(150, -230, 40, 40, 120, 0, 'black', 'blue')
+    turtle.rt(45)
+    # Drawing fox.
+    ellipse(60, -120, 5, 50, 'orange', 'brown', 3)
+    ellipse(290, -70, 50, 5, 'orange', 'brown', 3)
+    ellipse(70, -120, 5, 50, 'brown', 'orange', 3)
+    ellipse(280, -70, 50, 5, 'brown', 'orange', 3)
+    turtle.lt(45)
+    ellipse(110, -70, 120, 30, 'brown', 'orange', 3)
+    turtle.lt(260)
+    triangle(85, 50, 115, 115, 135, 0, 'brown', 'orange')
+    turtle.rt(32)
+    triangle(85, 50, 35, 35, 120, 0, 'brown', 'orange')
+    turtle.rt(32)
+    triangle(130, 20, 35, 35, 120, 0, 'brown', 'orange')
+    ellipse(90, 15, 8, 8, 'brown', 'white', 2)
+    ellipse(120, 0, 8, 8, 'brown', 'white', 2)
+    ellipse(95, 20, 3, 3, 'black', 'black', 1)
+    ellipse(125, 5, 3, 3, 'black', 'black', 1)
+    ellipse(58, -70, 8, 8, 'black', 'black', 1)
+    parallelogram(285, -35, 70, 30, 60, 120, 'brown', 'orange')
+    # Drawing balls.
+    ellipse(150, 300, 40, 40, 'pink', '', 15)
+    ellipse(50, 250, 40, 40, 'purple', '', 15)
+    ellipse(200, 200, 40, 40, 'yellow', '', 15)
+    ellipse(100, 150, 40, 40, 'green', '', 15)
 
 
 def main():
