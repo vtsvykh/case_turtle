@@ -1,7 +1,7 @@
 """
 "Circus"
 Group:
-Fishchukova Sofia
+Fishchukova Sofia 60%
 Tsvykh Viktoria
 """
 
