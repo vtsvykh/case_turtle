@@ -2,7 +2,7 @@
 "Circus"
 Group:
 Fishchukova Sofia 60%
-Tsvykh Viktoria
+Tsvykh Viktoria   70%
 """
 
 import turtle
